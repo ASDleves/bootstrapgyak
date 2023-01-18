@@ -1,0 +1,44 @@
+body{
+    background-image: url(hatter.jpg);
+}
+main{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "as a a"
+                         "as s s"
+                         "f f f";
+    display: grid;
+
+}
+header{
+    margin: auto;
+    height: 400px;
+}
+header img{
+    width: 400%;
+    height: 400px;
+    position: relative;
+}
+nav{
+    grid-area: n;
+}
+aside{
+    grid-area: as;
+}
+article{
+    grid-area: a;
+}
+section{
+    grid-area: s;
+}
+section img{
+    width: 100%;
+}
+footer{
+    grid-area: f;
+}
